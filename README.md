@@ -16,3 +16,4 @@ Click [here](https://www.udemy.com/unrealcourse?couponCode=GitHubSpecial) to fin
 
 ## Lecture List
 * BE01 - Section Introduction
+* BT02 Game Design Document (GDD)
