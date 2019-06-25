@@ -77,9 +77,9 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 
-BattleTank/Downloads/
-BattleTank/Saved/
-BattleTank/Intermediate/
-BattleTank/Content/StarterContent/HDRI/
-BattleTank/Content/StarterContent/Textures/
-BattleTank/Binaries/
+Downloads/*
+Saved/*
+Intermediate/*
+Content/StarterContent/HDRI/*
+Content/StarterContent/Textures/*
+Binaries/*
