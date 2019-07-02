@@ -26,4 +26,8 @@ public:
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	// Return an OUT parameter, true if hit landscape
+private:
+	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 };
