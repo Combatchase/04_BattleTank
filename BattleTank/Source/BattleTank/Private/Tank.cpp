@@ -9,7 +9,12 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// No need to protect pointers as added at construction
-	TankAimingCompontent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
+	TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
+}
+
+void ATank::SetBarrelReference(UStaticMeshComponent* BarrelToSet)
+{
+	TankAimingComponent->SetBarrelReference(BarrelToSet);
 }
 
 // Called when the game starts or when spawned
@@ -33,7 +38,7 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ATank::AimAt(FVector HitLocation)
 {
-	TankAimingCompontent->AimAt(HitLocation);
+	TankAimingComponent->AimAt(HitLocation);
 	auto OurTankName = GetName();
 	UE_LOG(LogTemp, Warning, TEXT("%s aiming at %s"), *OurTankName, *HitLocation.ToString());
 }
